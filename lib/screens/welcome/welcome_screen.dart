@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:random_app/screens/range_number/range_number_screen.dart';
 
 class WelcomeScreen extends StatelessWidget {
   @override
@@ -11,7 +13,7 @@ class WelcomeScreen extends StatelessWidget {
             Text('خوش آمدید'),
             InkWell(
               onTap: () {
-                // todo go first screen
+                Get.to(RangeNumberScreen());
               },
               child: Container(
                 padding: EdgeInsets.all(12.0),
