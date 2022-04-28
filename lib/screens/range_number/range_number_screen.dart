@@ -35,38 +35,46 @@ class RangeNumberScreen extends StatelessWidget {
                 Row(
                   children: [
                     Expanded(
-                      child: TextField(
-                        onChanged: (value) {
-                          rController.startNumber.value = int.parse(value);
-                        },
-                        textDirection: TextDirection.ltr,
-                        keyboardType: TextInputType.number,
-                        textAlign: TextAlign.center,
-                        decoration: InputDecoration(
-                            hintText: 'شروع',
-                            filled: true,
-                            border: OutlineInputBorder(
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(16)))),
+                      child: Obx(
+                        () => TextField(
+                          controller: rController.startTextController,
+                          textDirection: TextDirection.ltr,
+                          style: TextStyle(fontSize: 18.0),
+                          keyboardType: TextInputType.number,
+                          textAlign: TextAlign.center,
+                          decoration: InputDecoration(
+                              hintText: 'شروع',
+                              errorText: rController.startError.value.isNotEmpty
+                                  ? rController.startError.value
+                                  : null,
+                              filled: true,
+                              border: OutlineInputBorder(
+                                  borderRadius:
+                                      BorderRadius.all(Radius.circular(16)))),
+                        ),
                       ),
                     ),
                     SizedBox(
                       width: 10,
                     ),
                     Expanded(
-                      child: TextField(
-                        onChanged: (value) {
-                          rController.endNumber.value = int.parse(value);
-                        },
-                        textDirection: TextDirection.ltr,
-                        textAlign: TextAlign.center,
-                        keyboardType: TextInputType.number,
-                        decoration: InputDecoration(
-                            hintText: 'پایان',
-                            filled: true,
-                            border: OutlineInputBorder(
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(16)))),
+                      child: Obx(
+                        () => TextField(
+                          controller: rController.endTextController,
+                          textDirection: TextDirection.ltr,
+                          textAlign: TextAlign.center,
+                          style: TextStyle(fontSize: 18.0),
+                          keyboardType: TextInputType.number,
+                          decoration: InputDecoration(
+                              errorText: rController.endError.value.isNotEmpty
+                                  ? rController.endError.value
+                                  : null,
+                              hintText: 'پایان',
+                              filled: true,
+                              border: OutlineInputBorder(
+                                  borderRadius:
+                                      BorderRadius.all(Radius.circular(16)))),
+                        ),
                       ),
                     ),
                   ],
