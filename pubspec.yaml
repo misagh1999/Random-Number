@@ -26,8 +26,9 @@ dependencies:
   flutter_localizations:
     sdk: flutter
   get: 4.1.4
-  flutter_svg: 
+  flutter_svg: ^0.22.0
   flutter_spinkit: ^5.1.0
+  
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -37,6 +38,19 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  flutter_launcher_icons: ^0.9.2
+
+flutter_icons:
+  ios: true
+  android: "launcher_icon"
+  image_path: "assets/images/numbers.png"
+
+flutter_launcher_name:
+  name: "عدد تصادفی"
+
+# flutter pub get
+# flutter pub run flutter_launcher_icons:main
+
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

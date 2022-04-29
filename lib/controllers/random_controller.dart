@@ -37,6 +37,16 @@ class RandomController extends GetxController {
     if (!hasError) {
       startInt = int.parse(startTextController.text);
       endInt = int.parse(endTextController.text);
+
+      if (startInt > 999999999) {
+        hasError = true;
+        startError.value = "حداکثر مجاز: ۹۹۹۹۹۹۹۹۹";
+      }
+      if (endInt > 999999999) {
+        hasError = true;
+        endError.value = "حداکثر مجاز: ۹۹۹۹۹۹۹۹۹";
+      }
+      
       if (startInt >= endInt) {
         hasError = true;
         endError.value = "عدد پایان نباید کمتر از شروع باشد";
@@ -52,7 +62,7 @@ class RandomController extends GetxController {
     Random random = Random();
     for (int i = 0; i < 10; i++) {
       await Future.delayed(Duration(milliseconds: 80), () {
-        resultNumber.value = random.nextInt(endInt - startInt) + startInt;
+        resultNumber.value = random.nextInt(endInt + 1 - startInt) + startInt ;
       });
     }
   }
