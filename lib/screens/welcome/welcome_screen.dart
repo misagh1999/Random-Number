@@ -23,7 +23,7 @@ class WelcomeScreen extends StatelessWidget {
               children: [
                 Spacer(),
                 Text(
-                  'گردونه',
+                  'عدد تصادفی',
                   style: TextStyle(fontFamily: "Black", fontSize: 26),
                 ),
                 Text(
