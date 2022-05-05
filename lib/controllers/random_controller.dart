@@ -20,8 +20,7 @@ class RandomController extends GetxController {
 
     startError.value = "";
     endError.value = "";
-    print("start: " + startTextController.text);
-    print("end: " + endTextController.text);
+  
     if (startTextController.text.isEmpty) {
       hasError = true;
       startError.value = "این عدد را وارد کنید";
