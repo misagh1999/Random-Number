@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/state_manager.dart';
 import 'package:random_app/constants.dart';
 import 'package:random_app/controllers/random_controller.dart';
+import 'package:random_app/widgets/app_bar.dart';
 
 class RangeNumberScreen extends StatelessWidget {
   const RangeNumberScreen({Key key}) : super(key: key);
@@ -9,15 +10,7 @@ class RangeNumberScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(
-          'اعداد تصادفی',
-          style: TextStyle(color: Colors.white, fontSize: 16.0),
-        ),
-        centerTitle: true,
-        elevation: 0,
-        backgroundColor: kPrimaryColor,
-      ),
+      appBar: buildAppBar(title: "اعداد تصادفی"),
       body: GetBuilder<RandomController>(
         init: RandomController(),
         builder: (rController) => SafeArea(

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:random_app/screens/range_number/range_number_screen.dart';
+import 'package:random_app/screens/home/home_screen.dart';
 import 'package:flutter_svg/svg.dart';
 
 class WelcomeScreen extends StatelessWidget {
@@ -48,6 +48,6 @@ class WelcomeScreen extends StatelessWidget {
   }
 
   geToNextScreen() {
-    Get.off(RangeNumberScreen());
+    Get.off(HomeScreen());
   }
 }
