@@ -28,7 +28,6 @@ dependencies:
   get: 4.1.4
   flutter_svg: ^0.22.0
   flutter_spinkit: ^5.1.0
-  
 
 
   # The following adds the Cupertino Icons font to your application.

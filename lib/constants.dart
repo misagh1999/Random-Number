@@ -10,4 +10,6 @@ abstract class Assets {
   static const DICE4 = "assets/images/dice-4.svg";
   static const DICE5 = "assets/images/dice-5.svg";
   static const DICE6 = "assets/images/dice-6.svg";
+
+  static const LOGO = "assets/images/numbers.png";
 }
