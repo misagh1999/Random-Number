@@ -44,7 +44,7 @@ class DiceScreen extends StatelessWidget {
                   child: Center(
                     child: Text(
                       'چرخاندن',
-                      style: TextStyle(fontFamily: "Black", fontSize: 24),
+                      style: TextStyle(fontFamily: Fonts.Black, fontSize: 24),
                     ),
                   ),
                 ),

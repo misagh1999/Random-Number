@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:random_app/constants.dart';
 import 'package:random_app/screens/home/home_screen.dart';
 import 'package:flutter_svg/svg.dart';
 
@@ -13,7 +14,7 @@ class WelcomeScreen extends StatelessWidget {
           Opacity(
             opacity: 0.2,
             child: SvgPicture.asset(
-              "assets/images/bg_pattern.svg",
+              Assets.BG_PATTERN,
               fit: BoxFit.cover,
             ),
           ),
@@ -24,7 +25,7 @@ class WelcomeScreen extends StatelessWidget {
                 Spacer(),
                 Text(
                   'عدد تصادفی',
-                  style: TextStyle(fontFamily: "Black", fontSize: 26),
+                  style: TextStyle(fontFamily: Fonts.Black, fontSize: 26),
                 ),
                 Text(
                   'اپلیکیشن تولید کننده اعداد تصادفی',
@@ -36,7 +37,7 @@ class WelcomeScreen extends StatelessWidget {
                 Spacer(),
                 Text(
                   'برنامه‌نویس: محمدحسین میثاق‌پور',
-                  style: TextStyle(fontFamily: "Medium"),
+                  style: TextStyle(fontFamily: Fonts.Medium),
                 ),
                 Text('v 0.0.1')
               ],

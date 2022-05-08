@@ -15,7 +15,7 @@ class RangeNumberScreen extends StatelessWidget {
         init: RandomController(),
         builder: (rController) => SafeArea(
           child: Container(
-            padding: EdgeInsets.all(16.0),
+            padding: EdgeInsets.all(kDefaultPadding),
             width: double.infinity,
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
@@ -43,7 +43,7 @@ class RangeNumberScreen extends StatelessWidget {
                               filled: true,
                               border: OutlineInputBorder(
                                   borderRadius:
-                                      BorderRadius.all(Radius.circular(16)))),
+                                      BorderRadius.all(Radius.circular(kDefaultPadding)))),
                         ),
                       ),
                     ),
@@ -66,7 +66,7 @@ class RangeNumberScreen extends StatelessWidget {
                               filled: true,
                               border: OutlineInputBorder(
                                   borderRadius:
-                                      BorderRadius.all(Radius.circular(16)))),
+                                      BorderRadius.all(Radius.circular(kDefaultPadding)))),
                         ),
                       ),
                     ),
@@ -75,9 +75,9 @@ class RangeNumberScreen extends StatelessWidget {
                 InkWell(
                   onTap: () => rController.randomize(),
                   child: Container(
-                    margin: EdgeInsets.symmetric(vertical: 16.0),
+                    margin: EdgeInsets.symmetric(vertical: kDefaultPadding),
                     width: double.infinity,
-                    padding: EdgeInsets.all(16.0),
+                    padding: EdgeInsets.all(kDefaultPadding),
                     decoration: BoxDecoration(
                         color: kPrimaryColor,
                         borderRadius: BorderRadius.all(Radius.circular(16))),
@@ -85,7 +85,7 @@ class RangeNumberScreen extends StatelessWidget {
                         child: Text(
                       'محاسبه',
                       style: TextStyle(
-                          fontFamily: "Bold",
+                          fontFamily: Fonts.Bold,
                           color: Colors.white,
                           fontSize: 16.0),
                     )),
@@ -96,7 +96,7 @@ class RangeNumberScreen extends StatelessWidget {
                 ),
                 Obx(() => Text(
                       "${rController.resultNumber.value}",
-                      style: TextStyle(fontFamily: "Bold", fontSize: 28.0),
+                      style: TextStyle(fontFamily: Fonts.Bold, fontSize: 28.0),
                     )),
                 Spacer()
               ],

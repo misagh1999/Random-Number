@@ -31,12 +31,12 @@ class HomeScreen extends StatelessWidget {
                             Text(
                               'اعداد تصادفی',
                               style:
-                                  TextStyle(fontFamily: "Black", fontSize: 20),
+                                  TextStyle(fontFamily: Fonts.Black, fontSize: 20),
                             ),
                             Text(
                               'تولید کننده اعداد تصادفی',
                               style: TextStyle(
-                                  fontFamily: "Medium",
+                                  fontFamily: Fonts.Medium,
                                   color: Colors.black.withOpacity(0.5)),
                             ),
                           ],
@@ -111,7 +111,7 @@ class HomeScreen extends StatelessWidget {
                   child: Center(
                     child: Text(
                       "اعداد تصادفی",
-                      style: TextStyle(fontFamily: "Black", fontSize: 24),
+                      style: TextStyle(fontFamily: Fonts.Black, fontSize: 24),
                     ),
                   ),
                 ),
@@ -133,7 +133,7 @@ class HomeScreen extends StatelessWidget {
                   child: Center(
                     child: Text(
                       "تاس",
-                      style: TextStyle(fontFamily: "Black", fontSize: 24),
+                      style: TextStyle(fontFamily: Fonts.Black, fontSize: 24),
                     ),
                   ),
                 ),
