@@ -12,7 +12,7 @@ class DiceScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     final DiceController controller = Get.put(DiceController());
     return Scaffold(
-      appBar: buildAppBar(title: 'تاس'),
+      appBar: buildAppBar(title: 'Dice'),
       body: SafeArea(
         child: Center(
           child: Column(
@@ -43,7 +43,7 @@ class DiceScreen extends StatelessWidget {
                       borderRadius: BorderRadius.circular(16.0)),
                   child: Center(
                     child: Text(
-                      'بچرخون',
+                      'Roll',
                       style: TextStyle(fontFamily: Fonts.Black, fontSize: 24),
                     ),
                   ),

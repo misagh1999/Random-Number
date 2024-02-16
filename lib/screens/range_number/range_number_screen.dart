@@ -10,7 +10,7 @@ class RangeNumberScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: buildAppBar(title: "اعداد تصادفی"),
+      appBar: buildAppBar(title: "Random Number"),
       body: GetBuilder<RandomController>(
         init: RandomController(),
         builder: (rController) => SafeArea(
@@ -21,7 +21,7 @@ class RangeNumberScreen extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Spacer(),
-                Text('لطفا بازه‌ اعداد خود را وارد کنید'),
+                Text('Please Enter the Number Range'),
                 SizedBox(
                   height: 16,
                 ),
@@ -36,7 +36,7 @@ class RangeNumberScreen extends StatelessWidget {
                           keyboardType: TextInputType.number,
                           textAlign: TextAlign.center,
                           decoration: InputDecoration(
-                              hintText: 'شروع',
+                              hintText: 'From',
                               errorText: rController.startError.value.isNotEmpty
                                   ? rController.startError.value
                                   : null,
@@ -62,7 +62,7 @@ class RangeNumberScreen extends StatelessWidget {
                               errorText: rController.endError.value.isNotEmpty
                                   ? rController.endError.value
                                   : null,
-                              hintText: 'پایان',
+                              hintText: 'To',
                               filled: true,
                               border: OutlineInputBorder(
                                   borderRadius: BorderRadius.all(
@@ -83,7 +83,7 @@ class RangeNumberScreen extends StatelessWidget {
                         borderRadius: BorderRadius.all(Radius.circular(16))),
                     child: Center(
                         child: Text(
-                      'محاسبه',
+                      'Generate',
                       style: TextStyle(
                           fontFamily: Fonts.Bold,
                           color: Colors.white,

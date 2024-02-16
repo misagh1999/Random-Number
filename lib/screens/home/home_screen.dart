@@ -11,7 +11,7 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: buildAppBar(title: "خانه"),
+      appBar: buildAppBar(title: "Home"),
       drawer: Drawer(
         child: ListView(
           padding: EdgeInsets.zero,
@@ -29,12 +29,12 @@ class HomeScreen extends StatelessWidget {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
-                              'اعداد تصادفی',
-                              style:
-                                  TextStyle(fontFamily: Fonts.Black, fontSize: 20),
+                              'Random Number',
+                              style: TextStyle(
+                                  fontFamily: Fonts.Black, fontSize: 20),
                             ),
                             Text(
-                              'تولید کننده اعداد تصادفی',
+                              'Random Numebr Generator',
                               style: TextStyle(
                                   fontFamily: Fonts.Medium,
                                   color: Colors.black.withOpacity(0.5)),
@@ -60,33 +60,18 @@ class HomeScreen extends StatelessWidget {
                   ],
                 )),
             ListTile(
-              leading: Icon(Icons.rate_review),
-              title: Text('امتیاز به برنامه'),
-              onTap: () {
-                // todo
-                Get.back();
-              },
-            ),
-            ListTile(
-              leading: Icon(Icons.apps),
-              title: Text('دیگر برنامه‌ها'),
-              onTap: () {
-                // todo
-                Get.back();
-              },
-            ),
-            ListTile(
               leading: Icon(Icons.person),
-              title: Text('درباره ما'),
+              title: Text('About Us'),
               onTap: () {
                 // todo
                 Get.back();
                 Get.defaultDialog(
-                  title: "درباره ما",
-                  middleText: "برنامه‌نویس: محمدحسین میثاق‌پور" + "\n" + "misagh1999@gmail.com",
-                  textCancel: "بستن",
-                  cancelTextColor: kPrimaryColor
-                );
+                    title: "About Us",
+                    middleText: "Developed by M. Misaghpour" +
+                        "\n" +
+                        "misagh1999@gmail.com",
+                    textCancel: "Close",
+                    cancelTextColor: kPrimaryColor);
               },
             ),
           ],
@@ -110,7 +95,8 @@ class HomeScreen extends StatelessWidget {
                       borderRadius: BorderRadius.circular(16)),
                   child: Center(
                     child: Text(
-                      "اعداد تصادفی",
+                      "Random Number",
+                      textAlign: TextAlign.center,
                       style: TextStyle(fontFamily: Fonts.Black, fontSize: 24),
                     ),
                   ),
@@ -132,7 +118,8 @@ class HomeScreen extends StatelessWidget {
                       borderRadius: BorderRadius.circular(16)),
                   child: Center(
                     child: Text(
-                      "تاس",
+                      "Dice",
+                      textAlign: TextAlign.center,
                       style: TextStyle(fontFamily: Fonts.Black, fontSize: 24),
                     ),
                   ),

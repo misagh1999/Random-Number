@@ -23,11 +23,11 @@ class RandomController extends GetxController {
   
     if (startTextController.text.isEmpty) {
       hasError = true;
-      startError.value = "این عدد را وارد کنید";
+      startError.value = "Enter this Field";
     }
     if (endTextController.text.isEmpty) {
       hasError = true;
-      endError.value = "این عدد را وارد کنید";
+      endError.value = "Enter this Field";
     }
 
     int startInt = 0;
@@ -39,16 +39,16 @@ class RandomController extends GetxController {
 
       if (startInt > 999999999) {
         hasError = true;
-        startError.value = "حداکثر مجاز: ۹۹۹۹۹۹۹۹۹";
+        startError.value = "Max Num: 999999999";
       }
       if (endInt > 999999999) {
         hasError = true;
-        endError.value = "حداکثر مجاز: ۹۹۹۹۹۹۹۹۹";
+        endError.value = "Max Num: 999999999";
       }
       
       if (startInt >= endInt) {
         hasError = true;
-        endError.value = "عدد پایان نباید کمتر از شروع باشد";
+        endError.value = "The Second Number should be more than first number";
       }
     }
 

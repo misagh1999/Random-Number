@@ -24,11 +24,11 @@ class WelcomeScreen extends StatelessWidget {
               children: [
                 Spacer(),
                 Text(
-                  'عدد تصادفی',
+                  'Random Number',
                   style: TextStyle(fontFamily: Fonts.Black, fontSize: 26),
                 ),
                 Text(
-                  'اپلیکیشن تولید کننده اعداد تصادفی',
+                  'Random Number Generator',
                   style: TextStyle(fontSize: 16.0),
                 ),
                 CircularProgressIndicator(
@@ -36,7 +36,7 @@ class WelcomeScreen extends StatelessWidget {
                 ),
                 Spacer(),
                 Text(
-                  'برنامه‌نویس: محمدحسین میثاق‌پور',
+                  'Developed By Mohammadhossein Misaghpour',
                   style: TextStyle(fontFamily: Fonts.Medium),
                 ),
                 Text('v 0.0.2')
