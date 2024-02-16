@@ -6,7 +6,7 @@ import 'package:random_app/widgets/app_bar.dart';
 import 'package:get/get.dart';
 
 class DiceScreen extends StatelessWidget {
-  const DiceScreen({Key key}) : super(key: key);
+  const DiceScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -43,7 +43,7 @@ class DiceScreen extends StatelessWidget {
                       borderRadius: BorderRadius.circular(16.0)),
                   child: Center(
                     child: Text(
-                      'چرخاندن',
+                      'بچرخون',
                       style: TextStyle(fontFamily: Fonts.Black, fontSize: 24),
                     ),
                   ),

@@ -5,7 +5,7 @@ import 'package:random_app/controllers/random_controller.dart';
 import 'package:random_app/widgets/app_bar.dart';
 
 class RangeNumberScreen extends StatelessWidget {
-  const RangeNumberScreen({Key key}) : super(key: key);
+  const RangeNumberScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -42,8 +42,8 @@ class RangeNumberScreen extends StatelessWidget {
                                   : null,
                               filled: true,
                               border: OutlineInputBorder(
-                                  borderRadius:
-                                      BorderRadius.all(Radius.circular(kDefaultPadding)))),
+                                  borderRadius: BorderRadius.all(
+                                      Radius.circular(kDefaultPadding)))),
                         ),
                       ),
                     ),
@@ -65,8 +65,8 @@ class RangeNumberScreen extends StatelessWidget {
                               hintText: 'پایان',
                               filled: true,
                               border: OutlineInputBorder(
-                                  borderRadius:
-                                      BorderRadius.all(Radius.circular(kDefaultPadding)))),
+                                  borderRadius: BorderRadius.all(
+                                      Radius.circular(kDefaultPadding)))),
                         ),
                       ),
                     ),

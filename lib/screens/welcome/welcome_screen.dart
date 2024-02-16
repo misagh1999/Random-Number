@@ -39,7 +39,7 @@ class WelcomeScreen extends StatelessWidget {
                   'برنامه‌نویس: محمدحسین میثاق‌پور',
                   style: TextStyle(fontFamily: Fonts.Medium),
                 ),
-                Text('v 0.0.1')
+                Text('v 0.0.2')
               ],
             ),
           ),
